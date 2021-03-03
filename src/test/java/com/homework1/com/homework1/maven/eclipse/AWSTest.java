@@ -18,7 +18,7 @@ class AWSTest {
 	@Test
 	void testGetValues() {
 		int[] expected = {1, 2, 3};
-		int[] x = {1, 2, 3};
+		int[] x = {2, 2, 3};
 		
 		AWS aws = new AWS(x);
 		
