@@ -39,17 +39,9 @@ class AWSTest {
 		aws.setValues(arr1);
 		int[] results = aws.getValues();
 		
-		assertEquals(arr1[0], results[0]);
-		assertEquals(arr1[1], results[1]);
-		assertEquals(arr1[2], results[2]);
-		
-		aws.setValues(arr2);
-		int[] actual = aws.getValues();
-		
-		assertEquals(arr2[0], actual[0]);
-		assertEquals(arr2[1], actual[1]);
-		assertEquals(arr2[2], actual[2]);
-		assertEquals(arr2[3], actual[3]);
+		assertEquals(arr2[0], results[0]);
+		assertEquals(arr2[1], results[1]);
+		assertEquals(arr2[2], results[2]);
 	}
 
 	@Test
