@@ -60,7 +60,7 @@ class AWSTest {
 		
 		AWS aws = new AWS(arr1);
 		
-		assertEquals("AWS [values=[1,3,3]]", aws.toString());
+		assertEquals("AWS [values=[1, 3, 3]]", aws.toString());
 	}
 
 	@Test

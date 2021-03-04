@@ -64,6 +64,7 @@ public class AWS {
 		for (int i = 0; i < values.length; i++) {
 			if (values[i] > threshold) {
 				count++;
+				values[i] = FILLER_VALUE;
 			}
 		}
 		
