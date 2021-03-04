@@ -159,6 +159,7 @@ class AWSTest {
 		
 		AWS aws = new AWS(values);
 		
-		
+		int result = aws.removeBiggerThan(threshold);
+		assertEquals(expected, result);
 	}
 }
