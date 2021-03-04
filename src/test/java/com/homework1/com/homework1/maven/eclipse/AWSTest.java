@@ -160,6 +160,11 @@ class AWSTest {
 		AWS aws = new AWS(values);
 		
 		int result = aws.removeBiggerThan(threshold);
+		int[] newValues = aws.getValues();
+		
 		assertEquals(expected, result);
+		assertEquals(FILLER_VALUE, newValues[0]);
+		assertEquals(FILLER_VALUE, newValues[1]);
+		assertEquals(FILLER_VALUE, newValues[2]);
 	}
 }
