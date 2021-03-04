@@ -60,7 +60,7 @@ class AWSTest {
 		
 		AWS aws = new AWS(arr1);
 		
-		assertEquals("AWS [values=[1,2,3]]", aws.toString());
+		assertEquals("AWS [values=[1,3,3]]", aws.toString());
 	}
 
 	@Test
@@ -149,9 +149,16 @@ class AWSTest {
 		assertEquals(expectedValue, c);
 		 
 		assertEquals(first, result[0]);
-
-	
 	}
-
-
+	
+	@Test
+	void testRemoveBiggerThan() {
+		int threshold = 0;
+		int expected = 3;
+		int[] values = {1, 2, 3};
+		
+		AWS aws = new AWS(values);
+		
+		
+	}
 }
