@@ -167,4 +167,17 @@ class AWSTest {
 		assertEquals(FILLER_VALUE, newValues[1]);
 		assertEquals(FILLER_VALUE, newValues[2]);
 	}
+	
+	@Test
+	void testStepMultiplier() {
+		int[] input = {1, 12, 25};
+		
+		AWS aws = new AWS(input);
+		aws.stepMultiplier();
+		int[] newValues = aws.getValues();
+		
+		assertEquals(2, newValues[0]);
+		assertEquals(48, newValues[1]);
+		assertEquals(2500, newValues[2]);
+	}
 }

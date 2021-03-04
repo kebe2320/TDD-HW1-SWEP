@@ -71,4 +71,7 @@ public class AWS {
 		return count;
 	}
 
+	public void stepMultiplier() {
+		
+	}
 }
